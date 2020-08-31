@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Delivery Address is"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textPersonName"
+            android:text="Address"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textSize="10dp"/>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    </LinearLayout>
+
+    <ImageView
+        android:src="@mipmap/current_location"
+        android:layout_marginHorizontal="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:onClick="locate"/>
+
+</RelativeLayout>
