@@ -107,7 +107,7 @@ public class LocationPage extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View v) {
                 //Notification
                 NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(LocationPage.this, default_notification_channel_id )
-                        .setSmallIcon(R.drawable. ic_launcher_foreground )
+                        .setSmallIcon(R.mipmap. ic_launcher_foreground )
                         .setContentTitle( "Order Placed" )
                         .setContentText( "Your food will arrive soon." )
                         .setSmallIcon(R.mipmap.icon);
