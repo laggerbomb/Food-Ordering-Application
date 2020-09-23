@@ -94,7 +94,7 @@ public class MainAdmin extends AppCompatActivity {
 
                         //Notification
                         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(MainAdmin.this, default_notification_channel_id )
-                                .setSmallIcon(R.drawable. ic_launcher_foreground )
+                                .setSmallIcon(R.mipmap.ic_launcher_foreground )
                                 .setContentTitle( "New Order Placed" )
                                 .setContentText( "New orders have been placed by our valuable customer!" )
                                 .setSmallIcon(R.mipmap.icon);
